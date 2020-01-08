@@ -1,7 +1,9 @@
 html{
-    color:blue;
+    color: blue;
+    background-color: green;
 }
 
 body{
     background-color: aqua;
+    color: red;
 }
