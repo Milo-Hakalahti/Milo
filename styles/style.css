@@ -1,15 +1,5 @@
 html{
-    color: blue;
-    background-color: green;
-    font-family: sans-serif;
+    color:black;
+    background-color: white;
 }
 
-body{
-    background-color: aqua;
-    color: red;
-}
-
-#test{
-    color:aqua;
-    background-color: red;
-}
