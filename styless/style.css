@@ -1,4 +1,7 @@
-html
-{
+html{
     color:blue;
+}
+
+body{
+    background-color: aqua;
 }
