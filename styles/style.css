@@ -264,10 +264,15 @@ img{
     
     #mainText{
     font-size: 1.8vww;
+    margin: 0;
     }
     
     .basicText{
-        font-size: 1.8vw;
+    font-size: 1.8vw;
+    }
+    
+    .textHeader{
+        margin-top: 0px;
     }
     
     #aboutMeText{
@@ -301,6 +306,7 @@ img{
     .basicText{max-width: 300px; overflow-wrap: break-word; word-wrap: break-word; hyphens: auto; overflow: auto}
     #projectText{width: 100%; max-width: 300px; overflow-wrap: break-word; word-wrap: break-word; hyphens: auto; overflow: auto;padding-bottom: 3rem}
     #photo{width: 200px; height: 200px}
+    #mainText{margin-top: 10px;margin-left: 40px}
     
     .projectPhoto{
     height: 100px;
@@ -321,6 +327,18 @@ img{
     #projectText{
     width: 400px;
     }
+}
+    
+@media screen and (max-width: 1400px){
+    #aboutMeText{
+    width: 400px;
+    }
+
+    #projectText{
+    width: 400px;
+    }
+    
+    #mainText{margin-top: 50px;margin-left: 40px; color: aqua;}
 }
 
 
