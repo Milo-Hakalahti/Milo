@@ -298,7 +298,8 @@ img{
     #main { 100%; margin: 0; border: none;}
     #footer {width: 100%;}
     #aboutMeHeader{margin-left: 10px;}
-    #aboutMeText{width: 500px; margin-left: 10px;}
+    #aboutMeText{width: 500px; margin-left: 10px; color: aqua}
+    .basicText{width: 500px; margin-left: 10px; color: aqua}
     #projectText{width: 100%;margin-left: 10px}
     #photo{width: 200px; height: 200px}
     
