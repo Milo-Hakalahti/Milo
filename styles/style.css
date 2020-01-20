@@ -297,9 +297,9 @@ img{
     #header { width: 100%;}
     #main { 100%; margin: 0; border: none;}
     #footer {width: 100%;}
-    #aboutMeText{max-width: 300px; overflow-wrap: break-word; word-wrap: break-word; hyphens: auto}
-    .basicText{max-width: 300px; overflow-wrap: break-word; word-wrap: break-word; hyphens: auto}
-    #projectText{width: 100%;}
+    #aboutMeText{max-width: 300px; overflow-wrap: break-word; word-wrap: break-word; hyphens: auto; overflow: auto}
+    .basicText{max-width: 300px; overflow-wrap: break-word; word-wrap: break-word; hyphens: auto; overflow: auto}
+    #projectText{width: 100%; max-width: 300px; overflow-wrap: break-word; word-wrap: break-word; hyphens: auto; overflow: auto;padding-bottom: 3rem}
     #photo{width: 200px; height: 200px}
     
     .projectPhoto{
