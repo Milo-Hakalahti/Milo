@@ -1,5 +1,326 @@
 html{
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
     color:black;
     background-color: white;
+    background-image: url("../Images/Background.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
+
+body{
+    position: absolute;
+}
+
+#header{
+    margin: 0px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 60px;
+    width: 100%;
+    color: white;
+    background: rgb(0,0,0);
+    background: #202020;
+}
+
+#header-left-container{
+    float: left;
+    width: 25%;
+    margin-left: 20px;
+}
+
+#header-right-container{
+    float: right;
+    width: 60%;
+}
+
+#innerFirst{
+    float: left;
+    margin-right: 40px;
+}
+
+#innerSecond{
+    float: left;
+    margin-right: 40px;
+}
+
+#innerThird{
+    float: left;
+    margin-right: 40px;
+}
+
+#innerFourth{
+    float: left;
+    margin-right: 40px;
+}
+
+#main{
+    margin: 0px;
+    position: fixed;
+    left: 0px;
+    top: 60px;
+    height: 90%;
+    width: 100%;
+}
+
+#footer{
+    margin: 0px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 5%;
+    width: 100%;
+    background-color: #202020;
+    color: white;
+}
+
+.basicText{
+    float: left;
+    color: white;
+    margin: 0px;
+    text-shadow: 1px 1px black;
+}
+
+.textHeader{
+    color: white;
+    margin: 0px;
+    margin-left: 15px;
+}
+
+.headerText{
+    color: white;
+    margin: 0px;
+}
+
+#photo{
+    height: 400px;
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 50px;
+    float: left;
+    border-radius: 50%;
+}
+
+.projectPhoto{
+    height: 250px;
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 50px;
+    float: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.projectPhoto:hover{
+    opacity: 0.7;
+}
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+    background-color: white;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#mainText{
+    margin-right: 60px;
+    margin-top: 70px;
+    float: left;
+    margin-left: 15px;
+}
+
+#aboutMeText{
+    width: 800px;
+    margin-left: 0;
+    float: left;
+    margin-left: 15px;
+}
+
+#projectText{
+    width: 800px;
+    float: left;
+    margin-left: 15px;
+}
+
+.Project{
+    height: 310px;
+}
+
+.scrollable{
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-photo{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close{
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover{
+    cursor: pointer;
+    color: #bbb;
+    text-decoration: none;
+}
+
+.close:focus{
+    cursor: pointer;
+    color: #bbb;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-photo{
+        width: 100%;
+    }
+}
+
+.mainLinks{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.projectLinks{
+    color: lightblue;
+}
+
+.logo{
+    height: 180px;
+    width: 330px;
+    margin-left: 50px;
+    margin-top: 50px;
+    float: left;
+}
+
+.footerText{
+    color: white;
+    margin-top: 15px;
+    margin-left: 40%;
+    text-shadow: 1px 1px black;
+}
+
+.chosen{
+    text-decoration:underline;
+}
+
+@media screen and (max-width: 890px){
+    #header { 
+    width: 100%;
+    }
+    
+    .headerText{
+    font-size: 1.8vw;
+    }
+    
+    #main { 100%; 
+    margin: 0; 
+    border: none;
+    }
+    
+    #mainText{
+    font-size: 1.8vww;
+    }
+    
+    .basicText{
+        font-size: 1.8vw;
+    }
+    
+    #aboutMeText{
+    font-size: 1.8vw
+    }
+    
+    #footer {
+    width: 100%;
+    }
+    
+    .footerText{
+    font-size: 1.8vw;
+    }
+    
+    .projectPhoto{
+    height: 150px;
+    width: 250px;
+    }
+    
+    .logo{
+    height: 150px;
+    width: 250px;
+    }
+}
+
+@media screen and (max-width: 620px){
+    #header { width: 100%;}
+    #main { 100%; margin: 0; border: none;}
+    #footer {width: 100%;}
+    #aboutMeHeader{margin-left: 10px;}
+    #aboutMeText{width: 100%; margin-left: 10px}
+    #projectText{width: 100%;margin-left: 10px}
+    #photo{width: 200px; height: 200px}
+    
+    .projectPhoto{
+    height: 100px;
+    width: 200px;
+    }
+    
+    .logo{
+    height: 100px;
+    width: 200px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #aboutMeText{
+    width: 400px;
+    }
+
+    #projectText{
+    width: 400px;
+    }
+}
+
 
